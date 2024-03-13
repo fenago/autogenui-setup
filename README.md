@@ -1,13 +1,19 @@
 # AutoGen Studio
 
-AutoGen Studio is an AutoGen-powered AI app (user interface) to help you rapidly prototype AI agents, enhance them with skills, compose them into workflows and interact with them to accomplish tasks. It is built on top of the [AutoGen](https://microsoft.github.io/autogen) framework, which is a toolkit for building AI agents.
+AutoGen Studio is an AutoGen-powered AI app (user interface) to help you rapidly prototype AI agents, enhance them with skills, compose them into workflows and interact with them to accomplish tasks. It is built on top of the `AutoGen` framework, which is a toolkit for building AI agents.
 
-### Open GitPod
-Open `https://gitpod.io/` in the browser and login with github.
+### Signup Github
 
-### 
+Open `https://github.com/signup` in the brwoser and signup if you don't have the account already.
 
-Click `New Workspace` and select the github repo.
+2. Create `New Repository` and name it autogenui.
+
+![](./images/repo.png)
+
+### Signup GitPod
+1. Open `https://gitpod.io/` in the browser and login with github.
+
+2. Click `New Workspace` and select the github repo.
 
 ![](./images/0.png)
 
@@ -17,6 +23,13 @@ Make sure the select following and click **Continue**:
 
 ![](./images/2.png)
 
+### Set OpenAI Key
+
+Running following command in the terminal:
+
+`export OPENAI_API_KEY=ADD_HERE`
+
+**Note:** You can get the above key from instructor.
 
 ### Installation
 
