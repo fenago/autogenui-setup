@@ -1,63 +1,37 @@
-# AutoGen Studio
+### Lab: Start AutoGen Studio
 
-AutoGen Studio is an AutoGen-powered AI app (user interface) to help you rapidly prototype AI agents, enhance them with skills, compose them into workflows and interact with them to accomplish tasks. It is built on top of the `AutoGen` framework, which is a toolkit for building AI agents.
+Install `autogenstudio` in the terminal by running following commands in the terminal: 
 
-### Signup Github
+```
+# Download the get-pip.py script
+curl -O https://bootstrap.pypa.io/get-pip.py
 
-Open `https://github.com/signup` in the brwoser and signup if you don't have the account already.
+# Install pip using the get-pip.py script with Python 3.11
+python3.11 get-pip.py
 
-2. Create `New Repository` and name it autogenui.
+# Verify pip version
+python3.11 -m pip --version
 
-![](./images/repo.png)
+# Install distutils for Python 3.11
+sudo apt install -y python3.11-distutils
 
-### Signup GitPod
-1. Open `https://gitpod.io/` in the browser and login with github.
-
-2. Click `New Workspace` and select the github repo.
-
-![](./images/0.png)
-
-Make sure the select following and click **Continue**:
-
-![](./images/1.png)
-
-![](./images/2.png)
-
-### Set OpenAI Key
-
-Running following command in the terminal:
-
-`export OPENAI_API_KEY=ADD_HERE`
-
-**Note:** You can get the above key from instructor.
-
-### Installation
-
-**Install from PyPi**
-
-With Python 3.10 or newer active in your virtual environment, use pip to install AutoGen Studio:
-
-```bash
 pip install autogenstudio
 ```
 
-![](./images/3.png)
+Autogen will require an API Key. We will use OpenAI so execute this command on the command line:
 
-### Running the Application
+`export OPENAI_API_KEY="your-key-here"`
 
-Once installed, run the web UI by entering the following in your terminal:
+To run AutoGen Studio, you need to specify the port it will operate on, using the following command:
 
-```bash
-autogenstudio ui --port 8081
-```
+`sudo OPENAI_API_KEY="your-key-here" autogenstudio ui --port 8081 --host 0.0.0.0 &`
 
-![](./images/4.png)
+This command configures AutoGen Studio to run on port 8081 and be accessible from any machine.
 
+Note: to run this in the background so it doesn’t end when the terminal ends, use this command:
 
-This will start the application on the specified port. Open your web browser and go to `http://8081-GITPOD_URL/` to begin using AutoGen Studio. You can get the complete URL from **PORTS** tab.
+`sudo OPENAI_API_KEY="your-key-here" nohup autogenstudio ui --port 8081 --host 0.0.0.0 &`
 
-![](./images/5.png)
+#### Access AutoGen Studio
 
-![](./images/6.png)
-
-Now that you have AutoGen Studio installed and running, you are ready to explore its capabilities, including defining and modifying agent workflows, interacting with agents and sessions, and expanding agent skills.
+Open your web browser and go to `http://<your-instance-dns-ip>:8081/`. You should now see the AutoGen Studio interface.
