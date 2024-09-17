@@ -1,10 +1,22 @@
 ### Lab: Start AutoGen Studio
 
-Run `autogenstudio` in the terminal by running following commands in the terminal.
+Install `autogenstudio` in the terminal by running following commands in the terminal: 
 
-Make sure `python 3.11` is installed in your lab environment:
+```
+# Download the get-pip.py script
+curl -O https://bootstrap.pypa.io/get-pip.py
 
-`python --version`
+# Install pip using the get-pip.py script with Python 3.11
+python3.11 get-pip.py
+
+# Verify pip version
+python3.11 -m pip --version
+
+# Install distutils for Python 3.11
+sudo apt install -y python3.11-distutils
+
+pip install autogenstudio
+```
 
 Autogen will require an API Key. We will use OpenAI so execute this command on the command line:
 
